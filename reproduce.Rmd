@@ -48,17 +48,17 @@ for(i in 1:k){
     train_cv<-yourData[-folds[[i]],]
     test_cv<-yourData[folds[[i]],]
      #Naive Bayes Classifier
-      # Installing e1071
-      library(e1071)
-      # Applying Naive Bayes
-      nbc <- naiveBayes(class ~., data =train_cv )
-      # Making predictions
-      prediction2 <- predict(nbc, test_cv, type="class")
-      cm2 <- table(test_cv$class, prediction2, dnn = c("Real Values", "Predictions"))
-      #Calculating Accuracy
-      n2 = diag(cm2)
-      accuracy2 <- sum(n2)/sum(cm2)
-      accuracy_list2[i] = accuracy2
+    # Installing e1071
+    library(e1071)
+    # Applying Naive Bayes
+    nbc <- naiveBayes(class ~., data =train_cv )
+    # Making predictions
+    prediction2 <- predict(nbc, test_cv, type="class")
+    cm2 <- table(test_cv$class, prediction2, dnn = c("Real Values", "Predictions"))
+    #Calculating Accuracy
+    n2 = diag(cm2)
+    accuracy2 <- sum(n2)/sum(cm2)
+    accuracy_list2[i] = accuracy2
 }
 a2 = sum(accuracy_list2)/k
 return(a2)
@@ -71,7 +71,7 @@ standard_derivation <- function(data, accuracy){
   for(i in 1:length(data)){
     power_res[i] = (data[i]-accuracy)*(data[i]-accuracy)
   }
-  return power_res
+  return(power_res)
 }
 ```
 
@@ -96,8 +96,10 @@ cv_nbc_20 = cross_validation_naive_bayes(yourData=soybean, k=20)
 k_fold_result[4] = cv_nbc_20
 k_fold_result
 
+
 hold_out_result = hold_out(data=soybean)
 hold_out_result
 
-sd = 
+sd <- standard_derivation(k_fold_result, hold_out_result)
+sd
 ```
