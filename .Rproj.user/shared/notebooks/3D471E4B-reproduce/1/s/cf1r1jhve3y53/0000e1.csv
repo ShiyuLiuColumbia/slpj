@@ -1,0 +1,2 @@
+"0","# hist(b, col = ""blue"")"
+"0","legend(""topleft"",inset = .01,c(""NBC"",""SBC"",""C4.5""),lty = c(2,1,6),pch=c(3,4,1),x.intersp=0.5, y.intersp=0.8)"

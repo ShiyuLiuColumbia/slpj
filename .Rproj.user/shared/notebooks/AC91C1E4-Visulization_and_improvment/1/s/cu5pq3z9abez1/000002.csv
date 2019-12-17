@@ -1,0 +1,7 @@
+"0","#Getting Dataset"
+"0","url= ""https://archive.ics.uci.edu/ml/machine-learning-databases/molecular-biology/promoter-gene-sequences/promoters.data"""
+"0","gene <-  as.data.frame(read.table(file = url, header = FALSE, dec = '.', sep = "",""))"
+"0",""
+"0","#colnames(ecoli) <- c(""Sequence Name"", ""mcg"", ""gvh"", ""lip"", ""chg"", ""aac"", ""alm1"", ""alm2"",""class"")"
+"0","#colnames(german)[21] <- ""class"""
+"0","gene"

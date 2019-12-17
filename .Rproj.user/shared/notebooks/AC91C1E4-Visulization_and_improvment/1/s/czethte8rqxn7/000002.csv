@@ -1,0 +1,7 @@
+"0","library(mlr)"
+"0",""
+"0","train.task <- makeClassifTask(data = gene, target = ""class"")"
+"0","var_imp <- generateFilterValuesData(train.task, method = ""chi.squared"")"
+"2","Error in requirePackages(x, why = ""generateFilterValuesData"", default.method = ""load"") : 
+  For generateFilterValuesData please install the following packages: FSelector
+"

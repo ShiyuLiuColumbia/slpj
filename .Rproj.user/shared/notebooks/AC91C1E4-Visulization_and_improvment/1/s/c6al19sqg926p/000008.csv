@@ -1,0 +1,5 @@
+"0","library(mlr)"
+"0","# creatw task"
+"0","train.task <- makeClassifTask(data = gene, target = ""class"")"
+"0","# View variable selection options"
+"0","listFilterMethods()"

@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1576457686196.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2406479750",
+    "id" : "C00E3F9",
+    "lastKnownWriteTime" : 1576545081,
+    "last_content_update" : 1576545081711,
+    "path" : "~/Desktop/Statical Learning PJ/nbtree1.R",
+    "project_path" : "nbtree1.R",
+    "properties" : {
+        "cursorPosition" : "12,26",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

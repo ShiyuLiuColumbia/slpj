@@ -1,0 +1,8 @@
+"0","url= ""https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer/breast-cancer.data"""
+"0","cancer <-  as.data.frame(read.table(file = url, header = FALSE, dec = ""."", sep = "","", na.strings = ""?""))"
+"0","cancer <- na.omit(cancer)"
+"0","#colnames(ecoli) <- c(""Sequence Name"", ""mcg"", ""gvh"", ""lip"", ""chg"", ""aac"", ""alm1"", ""alm2"",""class"")"
+"0","colnames(cancer)[11] <- ""class"""
+"2","Error in names(x) <- value : 
+  'names' attribute [11] must be the same length as the vector [10]
+"
